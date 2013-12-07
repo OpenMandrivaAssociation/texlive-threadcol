@@ -6,7 +6,7 @@
 # catalog-version 1.0
 Name:		texlive-threadcol
 Version:	1.0
-Release:	2
+Release:	3
 Summary:	Organize document columns into PDF "article thread"
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/threadcol
