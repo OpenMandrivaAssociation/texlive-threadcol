@@ -1,19 +1,13 @@
-# revision 28754
-# category Package
-# catalog-ctan /macros/latex/contrib/threadcol
-# catalog-date 2013-01-06 14:14:24 +0100
-# catalog-license lppl1.3
-# catalog-version 1.0
 Name:		texlive-threadcol
-Version:	1.0
-Release:	10
+Version:	28754
+Release:	1
 Summary:	Organize document columns into PDF "article thread"
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/threadcol
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/threadcol.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/threadcol.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/threadcol.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/threadcol.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/threadcol.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/threadcol.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -31,12 +25,12 @@ related regions of text into a form that the user can scroll
 through as if its contents were contiguous.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -50,7 +44,8 @@ through as if its contents were contiguous.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
