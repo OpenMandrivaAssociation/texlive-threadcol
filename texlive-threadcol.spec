@@ -1,6 +1,6 @@
 Name:		texlive-threadcol
 Version:	28754
-Release:	1
+Release:	2
 Summary:	Organize document columns into PDF "article thread"
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/threadcol
