@@ -3,7 +3,7 @@ Version:	28754
 Release:	2
 Summary:	Organize document columns into PDF "article thread"
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/threadcol
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/threadcol
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/threadcol.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/threadcol.doc.r%{version}.tar.xz
